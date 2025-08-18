@@ -1,4 +1,8 @@
-﻿bool loop = true;
+﻿using DECALCULATOR.Operacoes;
+
+bool loop = true;
+
+
 
 do
 {
@@ -17,7 +21,8 @@ do
     switch (opcao)
     {
         case "1":
-           // Somar();
+            Tela();
+            // Somar();
             break;
         case "2":
           //  Subtrair();
@@ -40,3 +45,17 @@ do
 
 }
 while (loop);
+
+(decimal, decimal) Tela()
+{
+
+    Console.WriteLine("Digite o primeiro numero: ");
+    decimal numero1 = decimal.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o segundo numero: ");
+    decimal numero2 = decimal.Parse(Console.ReadLine());
+
+    return (numero1, numero2);
+}
+
+
