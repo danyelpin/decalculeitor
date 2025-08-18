@@ -8,5 +8,12 @@ namespace DECALCULATOR.Classes
 {
     internal class Uteis
     {
+        public static void AguardarTecla()
+        {
+            Console.WriteLine("Aperte qualquer tecla para continuar...");
+            Console.ReadKey();
+        }
+
+
     }
 }
