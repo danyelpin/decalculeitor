@@ -1,4 +1,6 @@
-﻿bool loop = true;
+﻿using DECALCULATOR.Classes;
+
+bool loop = true;
 
 do
 {
@@ -17,16 +19,20 @@ do
     switch (opcao)
     {
         case "1":
-           // Somar();
+            // Somar();
+            Uteis.AguardarTecla();
             break;
         case "2":
-          //  Subtrair();
+            //  Subtrair();
+            Uteis.AguardarTecla();
             break;
         case "3":
-          //  Dividir();
+            //  Dividir();
+            Uteis.AguardarTecla();
             break;
         case "4":
             // Multiplicar();
+            Uteis.AguardarTecla();
             break;
         case "5":
             loop = false;
@@ -35,6 +41,7 @@ do
             break;
         default:
             Console.WriteLine("Opção inválida.");
+            Uteis.AguardarTecla();
             break;
     }
 
