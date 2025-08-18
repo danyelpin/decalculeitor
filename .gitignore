@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Rider / IntelliJ
+.idea/
+*.sln.iml
+*.user
+*.vs/
+bin/
+obj/
