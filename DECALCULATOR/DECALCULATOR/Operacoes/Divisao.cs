@@ -1,4 +1,6 @@
-﻿public class Divisao
+﻿using DECALCULATOR.Operacoes;
+
+public class Divisao : IOperacoes
 {
     public decimal Calcula(decimal numero1, decimal numero2)
     {
