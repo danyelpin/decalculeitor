@@ -17,20 +17,22 @@ do
     switch (opcao)
     {
         case "1":
-            Somar();
+           // Somar();
             break;
         case "2":
-            Subtrair();
+          //  Subtrair();
             break;
         case "3":
-            Dividir();
+          //  Dividir();
             break;
         case "4":
-            Multiplicar();
+            // Multiplicar();
+            break;
         case "5":
             loop = false;
             Console.WriteLine("Saindo...");
             Console.ReadKey();
+            break;
         default:
             Console.WriteLine("Opção inválida.");
             break;
