@@ -1,4 +1,5 @@
-﻿using DECALCULATOR.Operacoes;
+﻿using DECALCULATOR.Classes;
+using DECALCULATOR.Operacoes;
 
 bool loop = true;
 
@@ -12,7 +13,7 @@ do
 
     Console.WriteLine("Digite o segundo numero: ");
     decimal numero2 = decimal.Parse(Console.ReadLine());
-
+    
     Console.WriteLine("---Escolha uma das opções abaixo---");
     Console.WriteLine("1 => Somar");
     Console.WriteLine("2 => Subtrair");
@@ -26,16 +27,20 @@ do
     switch (opcao)
     {
         case "1":
-            //Console.WriteLine(Soma.Calcula(numero1,numero2));
+            // Somar();
+            Uteis.AguardarTecla();
             break;
         case "2":
-          //  Subtrair();
+            //  Subtrair();
+            Uteis.AguardarTecla();
             break;
         case "3":
-          //  Dividir();
+            //  Dividir();
+            Uteis.AguardarTecla();
             break;
         case "4":
             // Multiplicar();
+            Uteis.AguardarTecla();
             break;
         case "5":
             loop = false;
@@ -44,6 +49,7 @@ do
             break;
         default:
             Console.WriteLine("Opção inválida.");
+            Uteis.AguardarTecla();
             break;
     }
 
