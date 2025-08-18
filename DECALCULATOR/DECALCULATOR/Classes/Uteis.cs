@@ -14,6 +14,12 @@ namespace DECALCULATOR.Classes
             Console.ReadKey();
         }
 
+        public static decimal ReceberNumero(string msg)
+        {
+            Console.WriteLine(msg);
+            return decimal.Parse(Console.ReadLine());
+
+        }
 
     }
 }
