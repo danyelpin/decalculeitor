@@ -44,5 +44,12 @@ namespace DECALCULATOR.Classes
             Console.WriteLine($"Resultado: {new Multiplicacao().Calcula(numero1, numero2)}");
             Uteis.AguardarTecla();
         }
+        public static void MenuPar()
+        {
+            decimal numero1 = Uteis.ReceberNumero("Informe um número para saber se é par/impar: ");
+            
+            Console.WriteLine($"O numero é :{(numero1 % 2 == 0 ? "Par" : "Impar")}");
+            Uteis.AguardarTecla();
+        }
     }
 }

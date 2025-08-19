@@ -14,7 +14,8 @@ do
     Console.WriteLine("2 => Subtrair");
     Console.WriteLine("3 => Dividir");
     Console.WriteLine("4 => Multiplicar");
-    Console.WriteLine("5 => Sair");
+    Console.WriteLine("5 => Par/Impar");
+    Console.WriteLine("6 => Sair");
     Console.WriteLine("Opção: ");
 
     var opcao = Console.ReadLine();
@@ -34,6 +35,9 @@ do
             Menu.MenuMultiplicar();
             break;
         case "5":
+            Menu.MenuPar();
+            break;
+        case "6":
             loop = false;
             Console.WriteLine("Saindo...");
             Console.ReadKey();
