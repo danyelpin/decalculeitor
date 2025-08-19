@@ -14,13 +14,9 @@ internal class Uteis
         Console.WriteLine("Aperte qualquer tecla para continuar...");
         Console.ReadKey();
     }
-
-        public static decimal ReceberNumero(string msg)
-        {
-            Console.WriteLine(msg);
-            return decimal.Parse(Console.ReadLine());
-
-        }
-
+    public static decimal ReceberNumero(string msg)
+    {
+      Console.WriteLine(msg);
+      return decimal.Parse(Console.ReadLine());
     }
 }
