@@ -28,7 +28,7 @@ do
     switch (opcao)
     {
         case "1":
-            Console.WriteLine($"Resultado: {new Soma().Calcula(numero1, numero2)}");
+            Console.WriteLine($"Resultado: { new Soma().Calcula(numero1, numero2)}");
             Uteis.AguardarTecla();
             break;
         case "2":
@@ -36,7 +36,7 @@ do
             Uteis.AguardarTecla();
             break;
         case "3":
-            Console.WriteLine($"Resultado: {new Divisao().Calcula(numero1, numero2)}"); 
+            Console.WriteLine($"Resultado: {Uteis.Arredonda(new Divisao().Calcula(numero1, numero2))}"); 
             Uteis.AguardarTecla();
             break;
         case "4":
