@@ -1,4 +1,5 @@
-﻿using DECALCULATOR.Classes;
+﻿using DECALCULATOR;
+using DECALCULATOR.Classes;
 using DECALCULATOR.Operacoes;
 
 bool loop = true;
@@ -27,19 +28,23 @@ do
     switch (opcao)
     {
         case "1":
-            // Somar();
+            Console.WriteLine("Resultado: ");
+            new Soma().Calcula(numero1, numero2);
             Uteis.AguardarTecla();
             break;
         case "2":
-            //  Subtrair();
+            Console.WriteLine("Resultado: "); 
+            new Subtracao().Calcula(numero1, numero2);
             Uteis.AguardarTecla();
             break;
         case "3":
-            //  Dividir();
+            Console.WriteLine("Resultado: "); 
+            new Divisao().Calcula(numero1, numero2);
             Uteis.AguardarTecla();
             break;
         case "4":
-            // Multiplicar();
+            Console.WriteLine("Resultado: "); 
+            new Multiplicacao().Calcula(numero1, numero2);
             Uteis.AguardarTecla();
             break;
         case "5":
