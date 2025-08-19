@@ -1,4 +1,5 @@
 ﻿using DECALCULATOR.Classes;
+using DECALCULATOR.Operacoes;
 
 bool loop = true;
 
@@ -6,6 +7,13 @@ do
 {
     Console.Clear();
     Console.WriteLine("=-=-=-=-=-=-=-=-=-= DECALCULEITOR =-=-=-=-=-=-=-=-=-=");
+
+    Console.WriteLine("Digite o primeiro numero: ");
+    decimal numero1 = decimal.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o segundo numero: ");
+    decimal numero2 = decimal.Parse(Console.ReadLine());
+    
     Console.WriteLine("---Escolha uma das opções abaixo---");
     Console.WriteLine("1 => Somar");
     Console.WriteLine("2 => Subtrair");
