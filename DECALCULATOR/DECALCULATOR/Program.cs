@@ -8,12 +8,6 @@ do
 {
     Console.Clear();
     Console.WriteLine("=-=-=-=-=-=-=-=-=-= DECALCULEITOR =-=-=-=-=-=-=-=-=-=");
-
-    Console.WriteLine("Digite o primeiro numero: ");
-    decimal numero1 = decimal.Parse(Console.ReadLine());
-
-    Console.WriteLine("Digite o segundo numero: ");
-    decimal numero2 = decimal.Parse(Console.ReadLine());
     
     Console.WriteLine("---Escolha uma das opções abaixo---");
     Console.WriteLine("1 => Somar");
@@ -28,20 +22,16 @@ do
     switch (opcao)
     {
         case "1":
-            Console.WriteLine($"Resultado: { new Soma().Calcula(numero1, numero2)}");
-            Uteis.AguardarTecla();
+            Menu.MenuSomar();
             break;
         case "2":
-            Console.WriteLine($"Resultado: {new Subtracao().Calcula(numero1, numero2)}"); 
-            Uteis.AguardarTecla();
+            Menu.MenuSubtrair();
             break;
         case "3":
-            Console.WriteLine($"Resultado: {Uteis.Arredonda(new Divisao().Calcula(numero1, numero2))}"); 
-            Uteis.AguardarTecla();
+            Menu.MenuDividir();
             break;
         case "4":
-            Console.WriteLine($"Resultado: {new Multiplicacao().Calcula(numero1, numero2)}"); 
-            Uteis.AguardarTecla();
+            Menu.MenuMultiplicar();
             break;
         case "5":
             loop = false;
