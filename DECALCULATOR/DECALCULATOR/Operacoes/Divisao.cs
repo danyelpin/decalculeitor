@@ -1,4 +1,5 @@
-﻿using DECALCULATOR.Operacoes;
+﻿using DECALCULATOR.Classes;
+using DECALCULATOR.Operacoes;
 
 public class Divisao : IOperacoes
 {
@@ -7,6 +8,6 @@ public class Divisao : IOperacoes
         if (numero2 == 0)
             return 0;
 
-        return numero1 / numero2;
+        return Uteis.Arredonda(numero1 / numero2);
     }
 }
