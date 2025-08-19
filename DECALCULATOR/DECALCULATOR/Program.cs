@@ -14,13 +14,14 @@ do
 
     Console.WriteLine("Digite o segundo numero: ");
     decimal numero2 = decimal.Parse(Console.ReadLine());
-    
+
     Console.WriteLine("---Escolha uma das opções abaixo---");
     Console.WriteLine("1 => Somar");
     Console.WriteLine("2 => Subtrair");
     Console.WriteLine("3 => Dividir");
     Console.WriteLine("4 => Multiplicar");
     Console.WriteLine("5 => Sair");
+    Console.WriteLine("69 => LOG AMALDIÇOADO");
     Console.WriteLine("Opção: ");
 
     var opcao = Console.ReadLine();
@@ -46,6 +47,12 @@ do
         case "5":
             loop = false;
             Console.WriteLine("Saindo...");
+            Console.ReadKey();
+            break;
+
+        case "69":
+            foreach (var log in AOperacoes.Logs)
+                Console.WriteLine(log);
             Console.ReadKey();
             break;
         default:
